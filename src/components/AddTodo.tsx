@@ -7,7 +7,7 @@ export default function AddTodo(){
     const [title, setTitle] = useState("");
 
     const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+       e.preventDefault();
         if (title !=="") {
             await addDoc(collection(db, "todos"), {
                 title,
