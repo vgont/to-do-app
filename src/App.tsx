@@ -53,7 +53,7 @@ function App() {
             {tasks.map((task: string)=> (
               <li key={task} className='p-4 flex flex-row items-center justify-between text-xl'>
                 {task}
-                <button className='pl-10' onClick={()=>handleDeleteTask(task)}><CgTrash/></button>
+                <button className='pl-10' onClick={()=> confirm('Deseja deletar?')? handleDeleteTask(task) : null}><CgTrash/></button>
               </li>
             ))}
           </ul>
