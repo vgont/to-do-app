@@ -22,7 +22,6 @@ export default function AddTodo(){
     };
 
     return(
-        <div>
             <form onSubmit={handleSubmit} className="flex flex-row gap-10 w-2/4 items-center justify-center">
                 <input
                 type="text"
@@ -34,6 +33,5 @@ export default function AddTodo(){
                 Add
               </button>
             </form>
-        </div>
     )
 }
