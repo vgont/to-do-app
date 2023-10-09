@@ -43,7 +43,7 @@ function App() {
     <>
       <main className="flex flex-col justify-center items-center gap-20">
         <div><Title/></div>
-        <div><AddTodo/></div>
+        <div className="flex flex-col justify-center items-center gap-20"><AddTodo/></div>
         <div className="w-1/2 mx-0 my-auto">{todos.map((todo)=>(
           <Todo
           key={todo.id}

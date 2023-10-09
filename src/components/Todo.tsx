@@ -38,11 +38,11 @@ export default function Todo({
             <input type="text" 
             style={{ textDecoration: todo.completed? "line-through": "none"}}
             value={todo.task === ""? newTask : todo.task}
-            className="list"
             onChange={handleChange}
+            className="w-2/3"
             />
             <div>
-                <button className="border-0 outline-none cursor-pointer bg-transparent rounded-full m-3"
+                <button className="border-0 outline-none cursor-pointer bg-transparent rounded-full m-3 "
                 onClick={()=> toggleComplete(todo)}>
                 <CheckCircleIcon id ="i"/>
                 </button>
